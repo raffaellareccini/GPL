@@ -1,0 +1,21 @@
+{
+	"name": "Event sheet 1",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "navicella",
+					"sid": 297566958524853,
+					"parameters": {
+						"object": "TERRA"
+					}
+				}
+			],
+			"actions": [],
+			"sid": 925835203246783
+		}
+	],
+	"sid": 970489053273867
+}
