@@ -1,0 +1,48 @@
+{
+	"name": "omino",
+	"plugin-id": "Sprite",
+	"sid": 232224842645196,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "MoveTo",
+			"name": "MuoviVerso",
+			"sid": 139867209874568
+		},
+		{
+			"behaviorId": "Rotate",
+			"name": "Ruota",
+			"sid": 430743058742384
+		}
+	],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 184,
+						"height": 244,
+						"originX": 0.4945652173913043,
+						"originY": 0.5081967213114754,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 3587152,
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 151036207431606,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}
