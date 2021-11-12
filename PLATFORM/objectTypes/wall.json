@@ -1,0 +1,37 @@
+{
+	"name": "wall",
+	"plugin-id": "Sprite",
+	"sid": 992978464552715,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 156,
+						"height": 117,
+						"originX": 0.5192307692307693,
+						"originY": 0.6324786324786325,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 5823260,
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 801785268422256,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

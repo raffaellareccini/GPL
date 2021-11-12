@@ -1,0 +1,384 @@
+{
+	"name": "Event sheet 1",
+	"events": [
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "HERO ANIMATION",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-moved",
+							"objectClass": "hero",
+							"sid": 351769174925482,
+							"behaviorType": "Platform"
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "hero",
+							"sid": 366672388860713,
+							"parameters": {
+								"animation": "\"walk\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 799629354992003
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-stopped",
+							"objectClass": "hero",
+							"sid": 455161607218648,
+							"behaviorType": "Platform"
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "hero",
+							"sid": 115082648712541,
+							"parameters": {
+								"animation": "\"stand\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 326447153336802
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-jump",
+							"objectClass": "hero",
+							"sid": 772537891044740,
+							"behaviorType": "Platform"
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "hero",
+							"sid": 645740107177338,
+							"parameters": {
+								"animation": "\"jump\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 613706457431996
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-landed",
+							"objectClass": "hero",
+							"sid": 262099014093362,
+							"behaviorType": "Platform"
+						}
+					],
+					"actions": [],
+					"sid": 418116564946315,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "is-moving",
+									"objectClass": "hero",
+									"sid": 869303801854017,
+									"behaviorType": "Platform"
+								}
+							],
+							"actions": [
+								{
+									"id": "set-animation",
+									"objectClass": "hero",
+									"sid": 654762514794808,
+									"parameters": {
+										"animation": "\"walk\"",
+										"from": "beginning"
+									}
+								}
+							],
+							"sid": 300063195495724
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "is-moving",
+									"objectClass": "hero",
+									"sid": 668178613073247,
+									"behaviorType": "Platform",
+									"isInverted": true
+								}
+							],
+							"actions": [
+								{
+									"id": "set-animation",
+									"objectClass": "hero",
+									"sid": 261508069364158,
+									"parameters": {
+										"animation": "\"stand\"",
+										"from": "beginning"
+									}
+								}
+							],
+							"sid": 335219543360019
+						}
+					]
+				}
+			],
+			"sid": 296962887852154
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "HERO CONTROLS",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-key-pressed",
+							"objectClass": "Keyboard",
+							"sid": 265844599565551,
+							"parameters": {
+								"key": 37
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "simulate-control",
+							"objectClass": "hero",
+							"sid": 407361580451300,
+							"behaviorType": "Platform",
+							"parameters": {
+								"control": "left"
+							}
+						},
+						{
+							"id": "set-mirrored",
+							"objectClass": "hero",
+							"sid": 153334763620679,
+							"parameters": {
+								"state": "mirrored"
+							}
+						}
+					],
+					"sid": 877273250893949
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-key-pressed",
+							"objectClass": "Keyboard",
+							"sid": 746552715991026,
+							"parameters": {
+								"key": 39
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "simulate-control",
+							"objectClass": "hero",
+							"sid": 676155784497984,
+							"behaviorType": "Platform",
+							"parameters": {
+								"control": "right"
+							}
+						},
+						{
+							"id": "set-mirrored",
+							"objectClass": "hero",
+							"sid": 441462419371524,
+							"parameters": {
+								"state": "not-mirrored"
+							}
+						}
+					],
+					"sid": 609425652276525
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-key-pressed",
+							"objectClass": "Keyboard",
+							"sid": 230904004501448,
+							"parameters": {
+								"key": 38
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "simulate-control",
+							"objectClass": "hero",
+							"sid": 543799075105788,
+							"behaviorType": "Platform",
+							"parameters": {
+								"control": "jump"
+							}
+						}
+					],
+					"sid": 473237608176856
+				}
+			],
+			"sid": 630534922377800
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "ENEMY AI",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-collision-with-another-object",
+							"objectClass": "enemy",
+							"sid": 680921390316858,
+							"parameters": {
+								"object": "solids"
+							}
+						},
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "enemy",
+							"sid": 811590636129890,
+							"parameters": {
+								"instance-variable": "direction",
+								"comparison": 0,
+								"value": "\"right\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-instvar-value",
+							"objectClass": "enemy",
+							"sid": 644152836672750,
+							"parameters": {
+								"instance-variable": "direction",
+								"value": "\"left\""
+							}
+						}
+					],
+					"sid": 746549196947712,
+					"disabled": true
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-collision-with-another-object",
+							"objectClass": "enemy",
+							"sid": 650453549309702,
+							"parameters": {
+								"object": "solids"
+							}
+						},
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "enemy",
+							"sid": 213085591006463,
+							"parameters": {
+								"instance-variable": "direction",
+								"comparison": 0,
+								"value": "\"right\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-instvar-value",
+							"objectClass": "enemy",
+							"sid": 566900821886315,
+							"parameters": {
+								"instance-variable": "direction",
+								"value": "\"left\""
+							}
+						}
+					],
+					"sid": 318854506961224,
+					"disabled": true
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "enemy",
+							"sid": 725694727641080,
+							"parameters": {
+								"instance-variable": "direction",
+								"comparison": 0,
+								"value": "\"left\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "simulate-control",
+							"objectClass": "enemy",
+							"sid": 584156252978472,
+							"behaviorType": "Platform",
+							"parameters": {
+								"control": "left"
+							}
+						}
+					],
+					"sid": 809351391276364
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "enemy",
+							"sid": 427800589447454,
+							"parameters": {
+								"instance-variable": "direction",
+								"comparison": 0,
+								"value": "\"right\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-instvar-value",
+							"objectClass": "enemy",
+							"sid": 561258758737752,
+							"parameters": {
+								"instance-variable": "direction",
+								"value": "\"left\""
+							}
+						}
+					],
+					"sid": 966604298483889
+				}
+			],
+			"sid": 678635245780023
+		}
+	],
+	"sid": 479747770620440
+}

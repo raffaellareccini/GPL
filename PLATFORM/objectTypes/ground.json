@@ -1,0 +1,43 @@
+{
+	"name": "ground",
+	"plugin-id": "Sprite",
+	"sid": 127298120178843,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "jumpthru",
+			"name": "Jumpthru",
+			"sid": 705932823266093
+		}
+	],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 219,
+						"height": 47,
+						"originX": 0.4977168949771689,
+						"originY": -0.23404255319148937,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 7421751,
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 343935892329658,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

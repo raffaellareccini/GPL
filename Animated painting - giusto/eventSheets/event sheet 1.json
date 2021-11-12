@@ -1,0 +1,55 @@
+{
+	"name": "Event sheet 1",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 656448973744139
+				}
+			],
+			"actions": [
+				{
+					"id": "move-to-position",
+					"objectClass": "astronaut",
+					"sid": 783624781435915,
+					"behaviorType": "MuoviVerso",
+					"parameters": {
+						"x": "astronaut.X + 800",
+						"y": "astronaut.Y",
+						"mode": "direct"
+					}
+				}
+			],
+			"sid": 291850404453434
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-x",
+					"objectClass": "astronaut",
+					"sid": 329295799412068,
+					"parameters": {
+						"comparison": 4,
+						"x-co-ordinate": "853"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-x",
+					"objectClass": "astronaut",
+					"sid": 489848287017720,
+					"parameters": {
+						"x": "-19"
+					}
+				}
+			],
+			"sid": 827321453017971
+		}
+	],
+	"sid": 970489053273867
+}
