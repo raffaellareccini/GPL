@@ -1,11 +1,19 @@
 {
 	"projectFormatVersion": 1,
 	"savedWithRelease": 26800,
-	"name": "platform",
+	"name": "PLATFORM",
 	"runtime": "c3",
 	"useWorker": "auto",
 	"bundleAddons": false,
 	"usedAddons": [
+		{
+			"type": "plugin",
+			"id": "TiledBg",
+			"name": "Tiled Background",
+			"author": "Scirra",
+			"version": "r268",
+			"bundled": false
+		},
 		{
 			"type": "plugin",
 			"id": "Sprite",
@@ -23,9 +31,17 @@
 			"bundled": false
 		},
 		{
+			"type": "plugin",
+			"id": "Particles",
+			"name": "Particles",
+			"author": "Scirra",
+			"version": "r268",
+			"bundled": false
+		},
+		{
 			"type": "behavior",
-			"id": "jumpthru",
-			"name": "Jump-thru",
+			"id": "solid",
+			"name": "Solid",
 			"author": "Scirra",
 			"version": "r268",
 			"bundled": false
@@ -48,22 +64,35 @@
 		},
 		{
 			"type": "behavior",
-			"id": "solid",
-			"name": "Solid",
+			"id": "jumpthru",
+			"name": "Jump-thru",
+			"author": "Scirra",
+			"version": "r268",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "MoveTo",
+			"name": "Move To",
 			"author": "Scirra",
 			"version": "r268",
 			"bundled": false
 		}
 	],
-	"uniqueId": "lh2y03rlnnu",
+	"uniqueId": "7vvth2k7zrt",
 	"objectTypes": {
 		"items": [
-			"ground",
+			"ledge2",
+			"ledge",
 			"hero",
 			"Keyboard",
-			"enemy",
 			"wall",
-			"wall2"
+			"monster",
+			"Particles",
+			"wall2",
+			"wall3",
+			"Lava",
+			"AbstractBG_"
 		],
 		"subfolders": []
 	},
@@ -71,13 +100,14 @@
 	"containers": [],
 	"families": {
 		"items": [
-			"solids"
+			"obstacles",
+			"characters"
 		],
 		"subfolders": []
 	},
 	"layouts": {
 		"items": [
-			"Layout 1"
+			"main layout"
 		],
 		"subfolders": []
 	},
@@ -111,33 +141,17 @@
 		"icon": {
 			"items": [
 				{
-					"name": "icon-16.png",
+					"name": "loading-logo.png",
 					"type": "image/png",
-					"sid": 160195059729913,
+					"sid": 555951742421845,
 					"icon-info": {
-						"purpose": "app-icon"
-					}
-				},
-				{
-					"name": "icon-32.png",
-					"type": "image/png",
-					"sid": 330315030050374,
-					"icon-info": {
-						"purpose": "app-icon"
-					}
-				},
-				{
-					"name": "icon-64.png",
-					"type": "image/png",
-					"sid": 685269066703683,
-					"icon-info": {
-						"purpose": "app-icon"
+						"purpose": "loading-logo"
 					}
 				},
 				{
 					"name": "icon-128.png",
 					"type": "image/png",
-					"sid": 476426131770606,
+					"sid": 579704793341849,
 					"icon-info": {
 						"purpose": "app-icon"
 					}
@@ -145,23 +159,39 @@
 				{
 					"name": "icon-512.png",
 					"type": "image/png",
-					"sid": 143844336742133,
+					"sid": 663370012113938,
 					"icon-info": {
 						"purpose": "app-icon"
 					}
 				},
 				{
-					"name": "loading-logo.png",
+					"name": "icon-256.png",
 					"type": "image/png",
-					"sid": 456263419402205,
+					"sid": 635117598719949,
 					"icon-info": {
-						"purpose": "loading-logo"
+						"purpose": "app-icon"
 					}
 				},
 				{
-					"name": "icon-256.png",
+					"name": "icon-64.png",
 					"type": "image/png",
-					"sid": 361841155739694,
+					"sid": 451201204386570,
+					"icon-info": {
+						"purpose": "app-icon"
+					}
+				},
+				{
+					"name": "icon-16.png",
+					"type": "image/png",
+					"sid": 623036847641045,
+					"icon-info": {
+						"purpose": "app-icon"
+					}
+				},
+				{
+					"name": "icon-32.png",
+					"type": "image/png",
+					"sid": 506111533911026,
 					"icon-info": {
 						"purpose": "app-icon"
 					}

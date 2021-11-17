@@ -1,14 +1,14 @@
 {
-	"name": "wall2",
+	"name": "wall3",
 	"plugin-id": "Sprite",
-	"sid": 410803093685431,
+	"sid": 578099362870090,
 	"isGlobal": false,
 	"instanceVariables": [],
 	"behaviorTypes": [
 		{
-			"behaviorId": "jumpthru",
-			"name": "Jumpthru",
-			"sid": 645089616917653
+			"behaviorId": "solid",
+			"name": "Solid",
+			"sid": 975418183132123
 		}
 	],
 	"effectTypes": [],
@@ -24,12 +24,12 @@
 						"originalSource": "",
 						"exportFormat": "png",
 						"exportQuality": 0.8,
-						"imageSpriteId": 2035646,
+						"imageSpriteId": 586172,
 						"useCollisionPoly": true,
 						"duration": 1
 					}
 				],
-				"sid": 545927157859143,
+				"sid": 352521875846225,
 				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,

@@ -1,36 +1,30 @@
 {
-	"name": "ground",
+	"name": "ledge",
 	"plugin-id": "Sprite",
-	"sid": 127298120178843,
+	"sid": 493683562966010,
 	"isGlobal": false,
 	"instanceVariables": [],
-	"behaviorTypes": [
-		{
-			"behaviorId": "jumpthru",
-			"name": "Jumpthru",
-			"sid": 705932823266093
-		}
-	],
+	"behaviorTypes": [],
 	"effectTypes": [],
 	"animations": {
 		"items": [
 			{
 				"frames": [
 					{
-						"width": 219,
-						"height": 47,
-						"originX": 0.4977168949771689,
-						"originY": -0.23404255319148937,
+						"width": 8,
+						"height": 8,
+						"originX": 0.5,
+						"originY": 0.5,
 						"originalSource": "",
 						"exportFormat": "png",
 						"exportQuality": 0.8,
-						"imageSpriteId": 7421751,
+						"imageSpriteId": 4455253,
 						"useCollisionPoly": true,
 						"duration": 1
 					}
 				],
-				"sid": 343935892329658,
-				"name": "Animation 1",
+				"sid": 483476275677992,
+				"name": "Default",
 				"isLooping": false,
 				"isPingPong": false,
 				"repeatCount": 1,

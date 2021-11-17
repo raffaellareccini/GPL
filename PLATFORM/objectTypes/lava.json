@@ -1,14 +1,14 @@
 {
-	"name": "wall2",
+	"name": "Lava",
 	"plugin-id": "Sprite",
-	"sid": 410803093685431,
+	"sid": 383519218060071,
 	"isGlobal": false,
 	"instanceVariables": [],
 	"behaviorTypes": [
 		{
-			"behaviorId": "jumpthru",
-			"name": "Jumpthru",
-			"sid": 645089616917653
+			"behaviorId": "MoveTo",
+			"name": "MoveTo",
+			"sid": 322702218779002
 		}
 	],
 	"effectTypes": [],
@@ -17,20 +17,20 @@
 			{
 				"frames": [
 					{
-						"width": 250,
-						"height": 250,
+						"width": 209,
+						"height": 52,
 						"originX": 0.5,
 						"originY": 0.5,
 						"originalSource": "",
 						"exportFormat": "png",
 						"exportQuality": 0.8,
-						"imageSpriteId": 2035646,
+						"imageSpriteId": 4423140,
 						"useCollisionPoly": true,
 						"duration": 1
 					}
 				],
-				"sid": 545927157859143,
-				"name": "Animation 1",
+				"sid": 208001236568594,
+				"name": "Default",
 				"isLooping": false,
 				"isPingPong": false,
 				"repeatCount": 1,
