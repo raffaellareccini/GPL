@@ -1,0 +1,18 @@
+{
+	"name": "barrier",
+	"plugin-id": "Sprite",
+	"sid": 246878759447840,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "solid",
+			"name": "Solid",
+			"sid": 517053248144397
+		}
+	],
+	"effectTypes": [],
+	"members": [
+		"barrier_red_race",
+		"barrier_white_race"
+	]
+}

@@ -1,0 +1,165 @@
+{
+	"name": "Event sheet 1",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "car_black_",
+					"sid": 188530873149609,
+					"parameters": {
+						"object": "goal"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 515051143877475,
+					"parameters": {
+						"layout": "WIN"
+					}
+				}
+			],
+			"sid": 515148994772969
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "car_black_",
+					"sid": 351356678584956,
+					"parameters": {
+						"object": "car_blue_"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 917688685614832,
+					"parameters": {
+						"layout": "DEFEAT"
+					}
+				}
+			],
+			"sid": 204758647551859
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 192370310815328
+				}
+			],
+			"actions": [
+				{
+					"id": "find-path",
+					"objectClass": "car_blue_",
+					"sid": 872183641899479,
+					"behaviorType": "Pathfinding",
+					"parameters": {
+						"x": "car_black_.X",
+						"y": "car_black_.Y"
+					}
+				}
+			],
+			"sid": 600135594548295
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-x-seconds",
+					"objectClass": "System",
+					"sid": 590514517997006,
+					"parameters": {
+						"interval-seconds": "0.5"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "add-obstacle",
+					"objectClass": "car_blue_",
+					"sid": 109600637503837,
+					"behaviorType": "Pathfinding",
+					"parameters": {
+						"obstacle": "barrier_white_race"
+					}
+				},
+				{
+					"id": "add-obstacle",
+					"objectClass": "car_blue_",
+					"sid": 761316508087097,
+					"behaviorType": "Pathfinding",
+					"parameters": {
+						"obstacle": "barrier_red_race"
+					}
+				},
+				{
+					"id": "find-path",
+					"objectClass": "car_blue_",
+					"sid": 268315011408399,
+					"behaviorType": "Pathfinding",
+					"parameters": {
+						"x": "car_black_.X",
+						"y": "car_black_.Y"
+					}
+				}
+			],
+			"sid": 575377617892368
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-failed-to-find-path",
+					"objectClass": "car_blue_",
+					"sid": 140704494588333,
+					"behaviorType": "Pathfinding"
+				}
+			],
+			"actions": [
+				{
+					"id": "find-path",
+					"objectClass": "car_blue_",
+					"sid": 612411452913584,
+					"behaviorType": "Pathfinding",
+					"parameters": {
+						"x": "car_black_.X",
+						"y": "car_black_.Y"
+					}
+				}
+			],
+			"sid": 928708420809737
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-path-found",
+					"objectClass": "car_blue_",
+					"sid": 984658859810901,
+					"behaviorType": "Pathfinding"
+				}
+			],
+			"actions": [
+				{
+					"id": "move-along-path",
+					"objectClass": "car_blue_",
+					"sid": 534634757845603,
+					"behaviorType": "Pathfinding"
+				}
+			],
+			"sid": 840178513382782
+		}
+	],
+	"sid": 546817730779151
+}
