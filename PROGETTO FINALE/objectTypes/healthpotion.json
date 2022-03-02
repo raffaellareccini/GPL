@@ -1,0 +1,63 @@
+{
+	"name": "healthpotion",
+	"plugin-id": "Sprite",
+	"sid": 680860837757360,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Flash",
+			"name": "Flash",
+			"sid": 343076585475194
+		}
+	],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 520,
+						"height": 751,
+						"originX": 0.5288461538461539,
+						"originY": 0.5179760319573902,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 4009569,
+						"collisionPoly": {
+							"points": [
+								0.29038461538461474,
+								0.017310252996005176,
+								0.5288461538461539,
+								0.015978695073235686,
+								0.7615384615384624,
+								0,
+								1,
+								0.46471371504660375,
+								0.9192307692307684,
+								0.9214380825565913,
+								0.5288461538461539,
+								0.9906790945406125,
+								0.09230769230769319,
+								0.8988015978695073,
+								0,
+								0.47003994673768246
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 935454505855658,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

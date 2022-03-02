@@ -1,0 +1,268 @@
+{
+	"name": "PAUSEeventsheet",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "cursor-is-over-object",
+					"objectClass": "Mouse",
+					"sid": 124251445628072,
+					"parameters": {
+						"object": "quit"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-font-size",
+					"objectClass": "quit",
+					"sid": 397816697608877,
+					"parameters": {
+						"size-pt": "30"
+					}
+				}
+			],
+			"sid": 914241557088446
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "else",
+					"objectClass": "System",
+					"sid": 658757729614909
+				}
+			],
+			"actions": [
+				{
+					"id": "set-font-size",
+					"objectClass": "quit",
+					"sid": 860539116057646,
+					"parameters": {
+						"size-pt": "25"
+					}
+				}
+			],
+			"sid": 825454887403705
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-object-clicked",
+					"objectClass": "Mouse",
+					"sid": 781086608145528,
+					"parameters": {
+						"mouse-button": "left",
+						"click-type": "clicked",
+						"object-clicked": "quit"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 991960484922298,
+					"parameters": {
+						"layout": "MENU"
+					}
+				}
+			],
+			"sid": 729503245610120
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-object-clicked",
+					"objectClass": "Mouse",
+					"sid": 458038442232427,
+					"parameters": {
+						"mouse-button": "left",
+						"click-type": "clicked",
+						"object-clicked": "CONTROLS"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 918522577132044,
+					"parameters": {
+						"layout": "CONTROLS"
+					}
+				}
+			],
+			"sid": 618536570455081
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "cursor-is-over-object",
+					"objectClass": "Mouse",
+					"sid": 555627144319433,
+					"parameters": {
+						"object": "CONTROLS"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-font-size",
+					"objectClass": "CONTROLS",
+					"sid": 237300579291472,
+					"parameters": {
+						"size-pt": "30"
+					}
+				}
+			],
+			"sid": 799222600706997
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "else",
+					"objectClass": "System",
+					"sid": 121895864433496
+				}
+			],
+			"actions": [
+				{
+					"id": "set-font-size",
+					"objectClass": "CONTROLS",
+					"sid": 373496997339842,
+					"parameters": {
+						"size-pt": "25"
+					}
+				}
+			],
+			"sid": 127775971172978
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-object-clicked",
+					"objectClass": "Mouse",
+					"sid": 353904462188567,
+					"parameters": {
+						"mouse-button": "left",
+						"click-type": "clicked",
+						"object-clicked": "restart"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 944932824530121,
+					"parameters": {
+						"layout": "GAME"
+					}
+				}
+			],
+			"sid": 981790544110008
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "cursor-is-over-object",
+					"objectClass": "Mouse",
+					"sid": 368228795016850,
+					"parameters": {
+						"object": "restart"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-font-size",
+					"objectClass": "restart",
+					"sid": 738804228141205,
+					"parameters": {
+						"size-pt": "30"
+					}
+				}
+			],
+			"sid": 364071630111759
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "else",
+					"objectClass": "System",
+					"sid": 827539149693152
+				}
+			],
+			"actions": [
+				{
+					"id": "set-font-size",
+					"objectClass": "restart",
+					"sid": 900311718798719,
+					"parameters": {
+						"size-pt": "25"
+					}
+				}
+			],
+			"sid": 317867642871159
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 631087464710154
+				}
+			],
+			"actions": [
+				{
+					"id": "move-to-position",
+					"objectClass": "leaves",
+					"sid": 387699196380139,
+					"behaviorType": "MoveTo",
+					"parameters": {
+						"x": "940",
+						"y": "161",
+						"mode": "direct"
+					}
+				}
+			],
+			"sid": 227032099734021
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-x",
+					"objectClass": "leaves",
+					"sid": 917962806436397,
+					"parameters": {
+						"comparison": 4,
+						"x-co-ordinate": "935"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-x",
+					"objectClass": "leaves",
+					"sid": 144606473229631,
+					"parameters": {
+						"x": "-84"
+					}
+				}
+			],
+			"sid": 848970633247608
+		}
+	],
+	"sid": 177044249955711
+}

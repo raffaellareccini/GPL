@@ -1,0 +1,48 @@
+{
+	"name": "leaves",
+	"plugin-id": "Sprite",
+	"sid": 896899218689495,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "MoveTo",
+			"name": "MoveTo",
+			"sid": 251994112721054
+		},
+		{
+			"behaviorId": "Sin",
+			"name": "Sine",
+			"sid": 637661635160750
+		}
+	],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 1920,
+						"height": 1408,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 2494400,
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 196562882207238,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

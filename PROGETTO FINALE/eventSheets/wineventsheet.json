@@ -1,0 +1,126 @@
+{
+	"name": "WINeventsheet",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-object-clicked",
+					"objectClass": "Mouse",
+					"sid": 744433476756957,
+					"parameters": {
+						"mouse-button": "left",
+						"click-type": "clicked",
+						"object-clicked": "quit"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 604084733154096,
+					"parameters": {
+						"layout": "MENU"
+					}
+				}
+			],
+			"sid": 440594626299931
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "cursor-is-over-object",
+					"objectClass": "Mouse",
+					"sid": 442204097402535,
+					"parameters": {
+						"object": "quit"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-font-size",
+					"objectClass": "quit",
+					"sid": 567775665098644,
+					"parameters": {
+						"size-pt": "30"
+					}
+				}
+			],
+			"sid": 820319322713631
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "else",
+					"objectClass": "System",
+					"sid": 932790992181572
+				}
+			],
+			"actions": [
+				{
+					"id": "set-font-size",
+					"objectClass": "quit",
+					"sid": 787468023530441,
+					"parameters": {
+						"size-pt": "25"
+					}
+				}
+			],
+			"sid": 384648230714164
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 711883033256619
+				}
+			],
+			"actions": [
+				{
+					"id": "move-to-position",
+					"objectClass": "leaves",
+					"sid": 914050276374105,
+					"behaviorType": "MoveTo",
+					"parameters": {
+						"x": "940",
+						"y": "161",
+						"mode": "direct"
+					}
+				}
+			],
+			"sid": 947286943568796
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-x",
+					"objectClass": "leaves",
+					"sid": 824175119559525,
+					"parameters": {
+						"comparison": 4,
+						"x-co-ordinate": "935"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-x",
+					"objectClass": "leaves",
+					"sid": 382245570873046,
+					"parameters": {
+						"x": "-84"
+					}
+				}
+			],
+			"sid": 642141581440478
+		}
+	],
+	"sid": 844626320236426
+}
