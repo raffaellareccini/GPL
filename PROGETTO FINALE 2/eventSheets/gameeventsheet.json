@@ -6,6 +6,14 @@
 			"text": "ho utilizzato le variabili globali perché una variabile evento, se si trova in un gruppo di eventi, diventa una variabile locale. Quindi apparirà solo come opzione per una variabile negli eventi all'interno di quel gruppo. In altri gruppi o in altre schede evento non compare affatto e non è accessibile. Invece le variabili globali sono valori numerici o di testo che sono globali per l'intero progetto."
 		},
 		{
+			"eventType": "comment",
+			"text": "bachi: nel momento in cui si sovrappongono i controlli e le animazioni il personaggio rimane fermo nella animazione ma continua nella direzione indicata "
+		},
+		{
+			"eventType": "comment",
+			"text": "bachi: l'animazione \"finisher\" non ha durata giusta perchè sicuramente nel momento in cui il personaggio principale si muove l'animazione si ferma"
+		},
+		{
 			"eventType": "variable",
 			"name": "TIMER",
 			"type": "number",
@@ -692,47 +700,49 @@
 							"sid": 624266503701945
 						}
 					],
-					"sid": 235327342761841
-				},
-				{
-					"eventType": "block",
-					"conditions": [
+					"sid": 235327342761841,
+					"children": [
 						{
-							"id": "on-collision-with-another-object",
-							"objectClass": "healthpotion",
-							"sid": 205841269557148,
-							"parameters": {
-								"object": "aphelios"
-							}
-						},
-						{
-							"id": "compare-eventvar",
-							"objectClass": "System",
-							"sid": 984461941486263,
-							"parameters": {
-								"variable": "healthaphelios",
-								"comparison": 2,
-								"value": "200"
-							}
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-collision-with-another-object",
+									"objectClass": "healthpotion",
+									"sid": 353624638821873,
+									"parameters": {
+										"object": "aphelios"
+									}
+								},
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 402086603573532,
+									"parameters": {
+										"variable": "healthaphelios",
+										"comparison": 2,
+										"value": "200"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "destroy",
+									"objectClass": "healthpotion",
+									"sid": 971583401959616
+								},
+								{
+									"id": "add-to-eventvar",
+									"objectClass": "System",
+									"sid": 881221599340772,
+									"parameters": {
+										"variable": "healthaphelios",
+										"value": "20"
+									}
+								}
+							],
+							"sid": 397933752010154
 						}
-					],
-					"actions": [
-						{
-							"id": "destroy",
-							"objectClass": "healthpotion",
-							"sid": 779596331465906
-						},
-						{
-							"id": "add-to-eventvar",
-							"objectClass": "System",
-							"sid": 967926089489923,
-							"parameters": {
-								"variable": "healthaphelios",
-								"value": "20"
-							}
-						}
-					],
-					"sid": 418126799167384
+					]
 				},
 				{
 					"eventType": "block",
@@ -878,9 +888,9 @@
 								{
 									"id": "every-x-seconds",
 									"objectClass": "System",
-									"sid": 732780726094540,
+									"sid": 752643138541642,
 									"parameters": {
-										"interval-seconds": "0.4"
+										"interval-seconds": "1.0"
 									}
 								}
 							],
