@@ -1,0 +1,76 @@
+{
+	"name": "CONTROLSeventsheet",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-any-click",
+					"objectClass": "Mouse",
+					"sid": 878430224637697
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 440421568873948,
+					"parameters": {
+						"layout": "GAME"
+					}
+				}
+			],
+			"sid": 567953455099103
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 745054363266698
+				}
+			],
+			"actions": [
+				{
+					"id": "move-to-position",
+					"objectClass": "leaves",
+					"sid": 976159904394025,
+					"behaviorType": "MoveTo",
+					"parameters": {
+						"x": "940",
+						"y": "161",
+						"mode": "direct"
+					}
+				}
+			],
+			"sid": 647211816629466
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-x",
+					"objectClass": "leaves",
+					"sid": 594052840400729,
+					"parameters": {
+						"comparison": 4,
+						"x-co-ordinate": "935"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-x",
+					"objectClass": "leaves",
+					"sid": 982159806306383,
+					"parameters": {
+						"x": "-84"
+					}
+				}
+			],
+			"sid": 696947403744135
+		}
+	],
+	"sid": 461427413241559
+}
