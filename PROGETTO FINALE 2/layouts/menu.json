@@ -38,7 +38,7 @@
 				{
 					"type": "title",
 					"properties": {
-						"text": "FINAL EPIC COMBACT",
+						"text": "THE EPIC WORLD",
 						"enable-bbcode": true,
 						"font": "Serpentine-yw3n3",
 						"size": 50,
@@ -61,10 +61,10 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 282,
-						"y": 108,
-						"width": 572,
-						"height": 151,
+						"x": 187,
+						"y": 156,
+						"width": 532,
+						"height": 108,
 						"originX": 0,
 						"originY": 0,
 						"color": [
@@ -225,6 +225,61 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
+					"uid": 47,
+					"instanceVariables": {},
+					"behaviors": {
+						"MoveTo": {
+							"properties": {
+								"max-speed": 200,
+								"acceleration": 600,
+								"deceleration": 600,
+								"rotate-speed": 0,
+								"set-angle": true,
+								"stop-on-solids": false,
+								"enabled": true
+							}
+						},
+						"Sine": {
+							"properties": {
+								"movement": "vertical",
+								"wave": "sine",
+								"period": 4,
+								"period-random": 2,
+								"period-offset": 4,
+								"period-offset-random": 0,
+								"magnitude": 100,
+								"magnitude-random": 0,
+								"enabled": true,
+								"live-preview": false
+							}
+						}
+					},
+					"world": {
+						"x": 414,
+						"y": 161,
+						"width": 280,
+						"height": 141,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "leaves",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
 					"uid": 48,
 					"instanceVariables": {},
 					"behaviors": {
@@ -255,8 +310,8 @@
 						}
 					},
 					"world": {
-						"x": 649,
-						"y": 210,
+						"x": 637,
+						"y": 211,
 						"width": 280,
 						"height": 141,
 						"originX": 0.5,

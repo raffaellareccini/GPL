@@ -1520,56 +1520,6 @@
 						}
 					],
 					"sid": 965772099109825
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "is-animation-playing",
-							"objectClass": "aphelios",
-							"sid": 235139381823697,
-							"parameters": {
-								"animation": "\"kick\""
-							}
-						}
-					],
-					"actions": [
-						{
-							"id": "set-animation",
-							"objectClass": "zeus",
-							"sid": 921153050499373,
-							"parameters": {
-								"animation": "\"punch\"",
-								"from": "beginning"
-							}
-						}
-					],
-					"sid": 954056616672327
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "on-animation-finished",
-							"objectClass": "zeus",
-							"sid": 944235112024324,
-							"parameters": {
-								"animation": "\"punch\""
-							}
-						}
-					],
-					"actions": [
-						{
-							"id": "set-animation",
-							"objectClass": "zeus",
-							"sid": 937712557101261,
-							"parameters": {
-								"animation": "\"idle\"",
-								"from": "beginning"
-							}
-						}
-					],
-					"sid": 141549468357828
 				}
 			],
 			"sid": 667913014693809
